@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'CountryKitIOS'
-    s.version          = '1.2.0'
+    s.version          = '1.3.0'
     s.summary          = 'Simple framework to get current country info'
     s.homepage         = 'https://github.com/SolveItTeam/CountryKitIOS.git'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -17,6 +17,9 @@ Pod::Spec.new do |s|
     s.ios.deployment_target = '10.0'
     s.source_files = 'CountryKitIOS/Classes/**/*'
     s.resources = 'CountryKitIOS/**/*.json'
+    s.resource_bundles = {
+        'CountryKitIOS' => ['CountryKitIOS/Resources/*.json']
+    }
     s.swift_version = '4.2'
     s.frameworks = 'CoreTelephony'
 end
