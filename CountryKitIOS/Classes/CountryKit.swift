@@ -10,13 +10,14 @@ import CoreTelephony
 
 public class CountryKit {
     private struct Constants {
+        static let bundleName = "CountryKitIOS"
         static let dataPath = "CountryCodeInfo"
     }
     
     private let allCountryInfo: [CountryInfo]
     
     public required init() {
-        let bundle = Bundle(for: type(of: self))
+        let bundle = Bundle(identifier: Constants.bundleName)!
         let path = bundle.path(forResource: Constants.dataPath, ofType: "json")!
         let text = try! String(contentsOfFile: path)
         let countriesData = try! JSONDecoder().decode([CountryData].self, from: text.data(using: .utf8)!)
