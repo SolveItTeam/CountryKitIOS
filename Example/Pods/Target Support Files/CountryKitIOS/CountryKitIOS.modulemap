@@ -1,0 +1,6 @@
+framework module CountryKitIOS {
+  umbrella header "CountryKitIOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

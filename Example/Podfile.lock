@@ -1,0 +1,16 @@
+PODS:
+  - CountryKitIOS (0.1.0)
+
+DEPENDENCIES:
+  - CountryKitIOS (from `../`)
+
+EXTERNAL SOURCES:
+  CountryKitIOS:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CountryKitIOS: 3ff8f457c3e2212641138e734b53ac36944dc7d8
+
+PODFILE CHECKSUM: 15fcc497f0fc317484c2d51b6ffa6feeea64dd49
+
+COCOAPODS: 1.5.3
