@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CountryKitIOS_Example' do
+  pod 'CountryKitIOS', :path => '../'
+
+  target 'CountryKitIOS_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
