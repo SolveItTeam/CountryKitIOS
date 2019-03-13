@@ -12,7 +12,7 @@
 		85450F995A9E96910EA8F44696423F82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 		886EEEC8223931410062AAD9 /* CountryKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886EEEC6223931410062AAD9 /* CountryKit.swift */; };
 		886EEEC9223931410062AAD9 /* CountryKitBoundaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886EEEC7223931410062AAD9 /* CountryKitBoundaryModel.swift */; };
-		886EEECC223931600062AAD9 /* CountryCodeInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 886EEECB2239315F0062AAD9 /* CountryCodeInfo.json */; };
+		886EEEF9223938C80062AAD9 /* CountryCodeInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 886EEEF8223938C80062AAD9 /* CountryCodeInfo.json */; };
 		96D8752828A74EFB7C3A37F432428CB0 /* Pods-CountryKitIOS_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A346E3FA3A89C7DEA3C78B984DBBCFA1 /* Pods-CountryKitIOS_Example-dummy.m */; };
 		A08A2B80BB3FF416AE3D46C7D8A61997 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 		A4F51B4902C110BF77F4F5BA00282AA0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
@@ -58,7 +58,7 @@
 		881A3580DAE4181B7591BE2C5D75FF11 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		886EEEC6223931410062AAD9 /* CountryKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountryKit.swift; path = CountryKitIOS/Classes/CountryKit.swift; sourceTree = "<group>"; };
 		886EEEC7223931410062AAD9 /* CountryKitBoundaryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountryKitBoundaryModel.swift; path = CountryKitIOS/Classes/CountryKitBoundaryModel.swift; sourceTree = "<group>"; };
-		886EEECB2239315F0062AAD9 /* CountryCodeInfo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = CountryCodeInfo.json; path = CountryKitIOS/CountryCodeInfo.json; sourceTree = "<group>"; };
+		886EEEF8223938C80062AAD9 /* CountryCodeInfo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = CountryCodeInfo.json; path = CountryKitIOS/Classes/CountryCodeInfo.json; sourceTree = "<group>"; };
 		92007344D72DBEB4C83C726CB632938D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A346E3FA3A89C7DEA3C78B984DBBCFA1 /* Pods-CountryKitIOS_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CountryKitIOS_Example-dummy.m"; sourceTree = "<group>"; };
@@ -119,7 +119,7 @@
 		3583064566C0CC49A69EBC4CEA9651B0 /* CountryKitIOS */ = {
 			isa = PBXGroup;
 			children = (
-				886EEECA223931510062AAD9 /* Resources */,
+				886EEEF7223938B70062AAD9 /* Resources */,
 				886EEEC6223931410062AAD9 /* CountryKit.swift */,
 				886EEEC7223931410062AAD9 /* CountryKitBoundaryModel.swift */,
 				EEB49E9AE42EA2D9DA24560FA6F9662F /* Pod */,
@@ -215,10 +215,10 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		886EEECA223931510062AAD9 /* Resources */ = {
+		886EEEF7223938B70062AAD9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				886EEECB2239315F0062AAD9 /* CountryCodeInfo.json */,
+				886EEEF8223938C80062AAD9 /* CountryCodeInfo.json */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -365,7 +365,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				886EEECC223931600062AAD9 /* CountryCodeInfo.json in Resources */,
+				886EEEF9223938C80062AAD9 /* CountryCodeInfo.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

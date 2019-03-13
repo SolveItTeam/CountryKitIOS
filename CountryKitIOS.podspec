@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'CountryKitIOS'
-    s.version          = '1.0.0'
+    s.version          = '1.1.0'
     s.summary          = 'Simple framework to get current country info'
     s.homepage         = 'https://github.com/SolveItTeam/CountryKitIOS.git'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
