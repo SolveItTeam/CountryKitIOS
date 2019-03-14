@@ -16,7 +16,7 @@ final class CurrentCountryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let kit = CountryKit()
+        let kit = CountryKit.build()
         let info = kit.getCurrentCountyInfo()
         counrtyCode.text = info?.countryID
         countryName.text = info?.countryName

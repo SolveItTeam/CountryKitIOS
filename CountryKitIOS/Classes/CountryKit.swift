@@ -8,16 +8,18 @@
 import Foundation
 import CoreTelephony
 
-public class CountryKit {
+public final class CountryKit {
     private struct Constants {
-        static let bundleName = "CountryKitIOS"
         static let dataPath = "CountryCodeInfo"
     }
     
-    private let allCountryInfo: [CountryInfo]
+    private var allCountryInfo = [CountryInfo]()
     
-    public required init() {
-        let bundle = Bundle(identifier: Constants.bundleName)!
+    private init(){}
+    
+    public static func build()-> CountryKit {
+        let instance = CountryKit()
+        let bundle = Bundle(for: type(of: instance))
         let path = bundle.path(forResource: Constants.dataPath, ofType: "json")!
         let text = try! String(contentsOfFile: path)
         let countriesData = try! JSONDecoder().decode([CountryData].self, from: text.data(using: .utf8)!)
@@ -32,7 +34,8 @@ public class CountryKit {
                                countryName: unwrappedCountryName,
                                phoneCodePrefix: item.phoneCodePrefix)
         }
-        allCountryInfo = countries.compactMap{ $0 }
+        instance.allCountryInfo = countries.compactMap{ $0 }
+        return instance
     }
     
     public func getAllCountriesInfo()-> [CountryInfo] {

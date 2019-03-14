@@ -9,6 +9,7 @@
 import UIKit
 import CountryKitIOS
 
+
 final class AllCountryViewController: UIViewController {
     private struct Constants {
         static let reuseIdentifier = "reuse"
@@ -19,7 +20,7 @@ final class AllCountryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let kit = CountryKit()
+        let kit = CountryKit.build()
         countriesInfo = kit.getAllCountriesInfo()
         tableView.register(UINib(nibName: "CountryTableViewCell", bundle: nil), forCellReuseIdentifier: Constants.reuseIdentifier)
         tableView.reloadData()
